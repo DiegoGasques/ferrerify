@@ -1,4 +1,5 @@
 import { addExpense, removeExpense, editExpense } from "../expenses.actions.js";
+import { ADD_EXPENSE, REMOVE_EXPENSE, EDIT_EXPENSE } from "../../actionTypes";
 
 describe("[Action] Expenses", () => {
   it("Test for addExpense action creators correct output", () => {
@@ -11,7 +12,7 @@ describe("[Action] Expenses", () => {
     const action = addExpense(newExpense);
 
     expect(action).toEqual({
-      type: "ADD_EXPENSE",
+      type: ADD_EXPENSE,
       payload: {
         ...newExpense,
         id: expect.any(String)
@@ -23,7 +24,7 @@ describe("[Action] Expenses", () => {
     const id = "123";
     const action = removeExpense(id);
     expect(action).toEqual({
-      type: "REMOVE_EXPENSE",
+      type: REMOVE_EXPENSE,
       payload: id
     });
   });
@@ -33,7 +34,7 @@ describe("[Action] Expenses", () => {
     const updates = { note: "The updated note" };
     const action = editExpense(id, updates);
     expect(action).toEqual({
-      type: "EDIT_EXPENSE",
+      type: EDIT_EXPENSE,
       payload: {
         id,
         updates

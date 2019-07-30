@@ -4,7 +4,13 @@ import {
   setSortBy,
   setStartDateFilter,
   setEndDateFilter
-} from "../expenses.actions.js";
+} from "../filters.actions.js";
+import {
+  SET_TEXT_FILTER,
+  SET_SORT_BY,
+  SET_START_DATE_FILTER,
+  SET_END_DATE_FILTER
+} from "../../actionTypes";
 
 describe("[Action] Filters", () => {
   it("Test for setTextFilter action creators correct output", () => {
@@ -12,7 +18,7 @@ describe("[Action] Filters", () => {
     const action = setTextFilter(text);
 
     expect(action).toEqual({
-      type: "SET_TEXT_FILTER",
+      type: SET_TEXT_FILTER,
       payload: text
     });
   });
@@ -22,7 +28,7 @@ describe("[Action] Filters", () => {
     const action = setSortBy(sortBy);
 
     expect(action).toEqual({
-      type: "SET_SORT_BY",
+      type: SET_SORT_BY,
       payload: sortBy
     });
   });
@@ -32,7 +38,7 @@ describe("[Action] Filters", () => {
     const action = setStartDateFilter(startDate);
 
     expect(action).toEqual({
-      type: "SET_START_DATE_FILTER",
+      type: SET_START_DATE_FILTER,
       payload: startDate
     });
   });
@@ -42,7 +48,7 @@ describe("[Action] Filters", () => {
     const action = setEndDateFilter(endDate);
 
     expect(action).toEqual({
-      type: "SET_END_DATE_FILTER",
+      type: SET_END_DATE_FILTER,
       payload: endDate
     });
   });
