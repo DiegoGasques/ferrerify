@@ -24,6 +24,7 @@ describe("[Reducer] Expenses", () => {
 
   it("Tests for correct output state given ADD_EXPENSE action", () => {
     const expense = {
+      id: "3",
       description: "Expense",
       amount: 15000,
       note: "Note",
@@ -33,10 +34,7 @@ describe("[Reducer] Expenses", () => {
     const state = reducer(initState, action);
     expect(state).toEqual({
       ...initState,
-      [expect.any(String)]: {
-        ...expense,
-        id: expect.any(String)
-      }
+      [expense.id]: expense
     });
   });
 
@@ -44,10 +42,12 @@ describe("[Reducer] Expenses", () => {
     const id = Object.keys(initState)[1];
     const action = { type: REMOVE_EXPENSE, payload: id };
     const state = reducer(initState, action);
-    const expectedState = Object.keys(initState).reduce(
-      key => (key === id ? acc : (acc[key] = initState[key])),
-      {}
-    );
+    const expectedState = Object.keys(initState).reduce((acc, key) => {
+      if (key !== id) {
+        acc[key] = initState[key];
+      }
+      return acc;
+    }, {});
     expect(state).toEqual(expectedState);
   });
 
