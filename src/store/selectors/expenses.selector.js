@@ -42,9 +42,8 @@ export const sortByMatchSelector = createSelector(
       if (sortBy === "amount") {
         return a.amount > b.amount ? -1 : 1;
       }
-      if (sortBy === "date") {
-        return a.createdAt > b.createdAt ? -1 : 1;
-      }
+
+      return a.createdAt > b.createdAt ? -1 : 1;
     });
   }
 );
