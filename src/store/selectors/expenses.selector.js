@@ -8,6 +8,11 @@ export const sortBySelector = state => state.filters.sortBy;
 export const startDateFilterSelector = state => state.filters.startDate;
 export const endDateFilterSelector = state => state.filters.endDate;
 
+export const getExpenseById = createSelector(
+  ({ expenses }, { match }) => expenses[match.params.id],
+  expense => expense
+);
+
 export const textFilterExpensesSelector = createSelector(
   expensesSelector,
   textFilterSelector,
