@@ -4,7 +4,7 @@ import "./AddExpenseBtn.scss";
 
 export const AddExpenseBtn = () => {
   return (
-    <Link to="/new">
+    <Link to="/new" data-testid="new">
       <button className="AddExpenseBtn">Add New Expense!</button>
     </Link>
   );
