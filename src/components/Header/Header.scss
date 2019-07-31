@@ -2,7 +2,7 @@
   background: #009dad;
   color: white;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.5),
     inset 0px 0px 15px -9px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.5),
@@ -11,5 +11,6 @@
 
 .Header h1 {
   font-weight: 500;
+  padding: 0 1.5rem;
   letter-spacing: 0.4rem;
 }
