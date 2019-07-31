@@ -30,7 +30,7 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
     if (!_description || !_amount) {
       setError("Please provide description and amount.");
     } else {
-      setError("Please provide description and amount.");
+      setError("");
       onSubmit({
         description: _description,
         note: _note,
