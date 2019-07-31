@@ -2,6 +2,7 @@ import React from "react";
 import ExpenseListItem from "./ExpensesListItem/ExpensesListItem";
 import { connect } from "react-redux";
 import { sortByMatchSelector } from "../../store/selectors/expenses.selector";
+import "./ExpensesList.scss";
 
 export const ExpensesList = ({ expenses }) => {
   const generate = () =>

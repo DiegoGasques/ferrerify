@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { removeExpense } from "../../../store/actions/expenses.actions";
+import './ExpensesListItem.scss';
 
 export const ExpensesListItem = ({
   id,
@@ -18,15 +19,16 @@ export const ExpensesListItem = ({
       <div className="ExpensesListItem__header">
         <h3 className="ExpensesListItem__description">{description}</h3>
         <button className="ExpensesListItem__toggle-Btn" onClick={handleToggle}>
-          {isOpen ? "Arrow Up" : "Arrow Down"}
+          {isOpen ? <i class="fas fa-sort-up"></i> : <i class="fas fa-sort-down"></i>}
         </button>
       </div>
-      <div className="ExpensesListItem__body">
-        <div>
-          <span className="ExpenseListItem__createdAt">{createdAt}</span>
-          <span className="ExpenseListItem__amount">R$: {amount}</span>
+      {isOpen && (
+        <div className="ExpensesListItem__body">
+        <div className="ExpenseListItem__info">
+          <div className="ExpenseListItem__createdAt">{createdAt}</div>
+          <div className="ExpenseListItem__amount"><span>R$: </span>{amount}</div>
         </div>
-        <div className="ExpenseListItem__note">Note: {note}</div>
+        <div className="ExpenseListItem__note"><span>Note: </span>{note}</div>
         <div className="ExpenseListItem__action-buttons">
           <button
             className="ExpenseListItem__delete-btn"
@@ -39,6 +41,7 @@ export const ExpensesListItem = ({
           </button>
         </div>
       </div>
+      )}
     </div>
   );
 };
