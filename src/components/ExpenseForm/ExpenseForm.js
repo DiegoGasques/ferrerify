@@ -1,71 +1,76 @@
 import React, { useState } from "react";
 import moment from "moment";
+import { SingleDatePicker } from "react-dates";
 
 const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
-  const [description, setDescription] = useState(description || "");
-  const [note, setNote] = useState(note || "");
-  const [amount, setAmount] = useState(amount ? (amount / 100).toString() : "");
-  const [createdAt, setCreatedAt] = useState(
+  const [_description, setDescription] = useState(description || "");
+  const [_note, setNote] = useState(note || "");
+  const [_amount, setAmount] = useState(
+    amount ? (amount / 100).toString() : ""
+  );
+  const [_createdAt, setCreatedAt] = useState(
     createdAt ? moment(createdAt) : moment()
   );
-  const [focused, setFocused] = useState(false);
-  const [error, setError] = useState("");
+  const [_focused, setFocused] = useState(false);
+  const [_error, setError] = useState("");
 
   const handleChange = ({ target: { name, value } }) => {
     if (name === "description") return setDescription(value);
     if (name === "note") return setNote(value);
     if (name === "amount") {
-      if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
-        setAmount(amount);
+      if (!value || value.match(/^\d{1,}(\.\d{0,2})?$/)) {
+        return setAmount(value);
       }
-      return setAmount(value);
     }
   };
 
   const handleSubmit = e => {
     e.preventDefault();
 
-    if (!description || !amount) {
+    if (!_description || !_amount) {
       setError("Please provide description and amount.");
     } else {
       setError("Please provide description and amount.");
       onSubmit({
-        description,
-        note,
-        amount: parseFloat(amount, 10) * 100,
-        createdAt: createdAt.valueOf()
+        description: _description,
+        note: _note,
+        amount: parseFloat(_amount, 10) * 100,
+        createdAt: _createdAt.valueOf()
       });
     }
   };
 
   return (
     <div>
-      {error && <p>{error}</p>}
+      {_error && <p>{_error}</p>}
       <form onSubmit={handleSubmit}>
         <input
           type="text"
+          name="description"
           placeholder="Description"
           autoFocus
-          value={description}
+          value={_description}
           onChange={handleChange}
         />
         <input
           type="text"
+          name="amount"
           placeholder="Ex: 10, 10.00"
-          value={amount}
+          value={_amount}
           onChange={handleChange}
         />
         <SingleDatePicker
-          date={createdAt}
+          date={_createdAt}
           onDateChange={setCreatedAt}
-          focused={focused}
+          focused={_focused}
           onFocusChange={setFocused}
           numberOfMonths={1}
           isOutsideRange={() => false}
         />
         <textarea
+          name="note"
           placeholder="Add a note for your expense (optional)"
-          value={note}
+          value={_note}
           onChange={handleChange}
         />
         <button>Add Expense</button>

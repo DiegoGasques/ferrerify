@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import ExpenseForm from "../ExpenseForm";
+import ExpenseForm from "../ExpenseForm/ExpenseForm";
 import { addExpense } from "../../store/actions/expenses.actions";
 
 export const AddExpensePage = ({ addExpense, history }) => {
@@ -17,8 +17,8 @@ export const AddExpensePage = ({ addExpense, history }) => {
   );
 };
 
-const mapDispatchToProps = () => ({
-  addExpense
+const mapDispatchToProps = dispatch => ({
+  addExpense: expense => dispatch(addExpense(expense))
 });
 
 export default connect(

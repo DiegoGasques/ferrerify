@@ -14,10 +14,13 @@ export const removeExpense = id => ({
   payload: id
 });
 
-export const editExpense = (id, updates) => ({
-  type: EDIT_EXPENSE,
-  payload: {
-    id,
-    updates
-  }
-});
+export const editExpense = (id, updates) => {
+  console.log("id: ", id);
+  return {
+    type: EDIT_EXPENSE,
+    payload: {
+      id,
+      updates
+    }
+  };
+};
