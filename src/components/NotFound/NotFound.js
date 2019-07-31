@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NotFound = () => (
+export const NotFound = () => (
   <div className="NotFound">
     404 - <Link to="/">Go home</Link>
   </div>

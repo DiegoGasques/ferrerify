@@ -14,7 +14,7 @@ export const ExpensesList = ({ expenses }) => {
         <h2>Expenses</h2>
       </div>
       <div className="ExpensesList__content">
-        {expenses ? generate() : <div>Loading...</div>}
+        {!!expenses ? generate() : <div>Loading...</div>}
       </div>
     </div>
   );

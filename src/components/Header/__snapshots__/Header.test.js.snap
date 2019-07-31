@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] Header Tests for changes in the rendered component 1`] = `
+<header
+  className="Header"
+>
+  <Container>
+    <h1
+      className="Header__title"
+    >
+      Ferrerify
+    </h1>
+  </Container>
+</header>
+`;

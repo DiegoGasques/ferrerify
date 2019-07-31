@@ -1,11 +1,11 @@
 import React from "react";
 import { shallow } from "enzyme";
 import toJson from "enzyme-to-json";
-import App from "./App";
+import { NotFound } from "./NotFound";
 
-describe("[COMPONENT] App", () => {
+describe("[COMPONENT] NotFound", () => {
   it("Tests for changes in the rendered component", () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<NotFound />);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] Dashboard Tests for changes in the rendered component 1`] = `
+<div
+  className="Dashboard"
+>
+  <Container>
+    <MainContent>
+      <Connect(ExpenseListFilters) />
+      <Connect(ExpensesList) />
+    </MainContent>
+    <SecondaryContent>
+      <Connect(GeneralInfo) />
+      <AddExpenseBtn />
+    </SecondaryContent>
+  </Container>
+</div>
+`;

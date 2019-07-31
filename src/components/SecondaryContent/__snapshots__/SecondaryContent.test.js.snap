@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] SecondaryContent Tests for changes in the rendered component 1`] = `
+<div
+  className="SecondaryContent"
+/>
+`;

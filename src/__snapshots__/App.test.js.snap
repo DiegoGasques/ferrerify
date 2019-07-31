@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] App Tests for changes in the rendered component 1`] = `
+<Fragment>
+  <Header />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(AddExpensePage)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/new"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(EditExpensePage)",
+          "type": [Function],
+        }
+      }
+      exact={true}
+      path="/edit/:id"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</Fragment>
+`;
