@@ -1,6 +1,6 @@
 import React from "react";
 import Container from "../Container/Container";
-import "./Header.scss";
+// import "./Header.scss";
 
 export const Header = () => {
   return (

@@ -30,29 +30,38 @@ export const Filters = ({
   };
 
   return (
-    <div>
+    <div className="Filters">
       <input
+        className="text-input"
         type="text"
         name="text"
+        placeholder="Filter text: "
         value={filters.text}
         onChange={onTextChange}
       />
-      <select value={filters.sortBy} name="sortBy" onChange={onSortChange}>
+      <select
+        className="selector"
+        value={filters.sortBy}
+        name="sortBy"
+        onChange={onSortChange}
+      >
         <option value="date">Date</option>
         <option value="amount">Amount</option>
       </select>
-      <DateRangePicker
-        startDate={filters.startDate}
-        startDateId={"startId8739137"}
-        endDate={filters.endDate}
-        endDateId={"endId739893"}
-        onDatesChange={onDatesChange}
-        focusedInput={focused}
-        onFocusChange={setFocused}
-        showClearDates={true}
-        numberOfMonths={1}
-        isOutsideRange={() => false}
-      />
+      <div>
+        <DateRangePicker
+          startDate={filters.startDate}
+          startDateId={"startId8739137"}
+          endDate={filters.endDate}
+          endDateId={"endId739893"}
+          onDatesChange={onDatesChange}
+          focusedInput={focused}
+          onFocusChange={setFocused}
+          showClearDates={true}
+          numberOfMonths={1}
+          isOutsideRange={() => false}
+        />
+      </div>
     </div>
   );
 };

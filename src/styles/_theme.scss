@@ -1,10 +1,31 @@
 // Colors
+$primary: #4c7586;
+$secondary: #aba9c3;
+$black: #000;
+$snow: #fcf7f8;
+$light-grey: #ced3dc;
+
 // Spacing
+$xs-size: 0.6rem;
 $s-size: 1.2rem;
 $m-size: 1.6rem;
 $l-size: 3.2rem;
 $xl-size: 4.8rem;
-$desktop-breakpoint: 45rem;
+
+// Media Queries
+$m-media-q: 988px;
+
+// Fonts
+$h1: 3rem;
+$h2: 2.6rem;
+$h3: 2.2rem;
+$h4: 1.8rem;
+$h5: 1.3rem;
+$h6: 0.8rem;
+
+//Shadows
+$main-shadow: 10px 10px 37px -21px rgba(0, 0, 0, 0.63);
+$main-inset-shadow: inset 0px 0px 37px -7px rgba(0, 0, 0, 0.22);
 
 *,
 *::after,

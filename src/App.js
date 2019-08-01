@@ -5,7 +5,7 @@ import DashBoard from "./components/Dashboard/Dashboard";
 import AddExpensePage from "./components/AddExpensePage/AddExpensePage";
 import EditExpensePage from "./components/EditExpensePage/EditExpensePage";
 import NotFound from "./components/NotFound/NotFound";
-import "./App.css";
+import "./styles/_styles.scss";
 import "react-dates/lib/css/_datepicker.css";
 
 function App() {

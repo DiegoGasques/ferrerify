@@ -1,0 +1,38 @@
+.Filters {
+  display: flex;
+  margin-bottom: $l-size;
+
+  .text-input {
+    flex-grow: 1;
+    margin-right: $s-size;
+    padding: $s-size;
+    font-size: $h4;
+    color: darken($light-grey, 34%);
+    border: 1px solid $light-grey;
+  }
+
+  .text-input:active {
+    outline: none;
+    border-bottom: 3px solid $primary;
+  }
+
+  .text-input:focus {
+    @extend .text-input:active;
+  }
+
+  .selector {
+    @extend .text-input;
+  }
+
+  @media (max-width: $m-media-q) {
+    flex-direction: column;
+
+    .text-input {
+      margin: 0 0 $s-size 0;
+    }
+
+    .selector {
+      margin: 0 0 $s-size 0;
+    }
+  }
+}
