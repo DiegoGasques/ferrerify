@@ -25,6 +25,23 @@ describe("[COMPONENT] ExpenseForm", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 
+  it("Tests for valid form submition", () => {
+    const onSubmitSpy = jest.fn();
+    const wrapper = shallow(
+      <ExpenseForm {...expensesArr[0]} onSubmit={onSubmitSpy} />
+    );
+
+    wrapper.find("form").simulate("submit", {
+      preventDefault: () => {}
+    });
+    expect(onSubmitSpy).toHaveBeenCalledWith({
+      description: expensesArr[0].description,
+      note: expensesArr[0].note,
+      amount: expensesArr[0].amount,
+      createdAt: expensesArr[0].createdAt
+    });
+  });
+
   it("Tests for handleChange call changing the description", () => {
     const wrapper = shallow(<ExpenseForm />);
     expect(toJson(wrapper.find('input[name="description"]'))).toMatchSnapshot();

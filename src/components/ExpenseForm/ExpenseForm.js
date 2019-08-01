@@ -24,6 +24,12 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
     }
   };
 
+  const handleDateChange = createdAt => {
+    if (createdAt) {
+      setCreatedAt(createdAt);
+    }
+  };
+
   const handleSubmit = e => {
     e.preventDefault();
 
@@ -61,7 +67,7 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
         />
         <SingleDatePicker
           date={_createdAt}
-          onDateChange={setCreatedAt}
+          onDateChange={handleDateChange}
           focused={_focused}
           onFocusChange={setFocused}
           numberOfMonths={1}

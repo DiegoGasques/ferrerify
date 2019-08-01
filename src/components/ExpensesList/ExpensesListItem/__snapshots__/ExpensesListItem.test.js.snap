@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being called correctly 1`] = `
+<div
+  className="ExpensesListItem"
+>
+  <div
+    className="ExpensesListItem__header"
+  >
+    <h3
+      className="ExpensesListItem__description"
+    >
+      Rent
+    </h3>
+    <button
+      className="ExpensesListItem__toggle-Btn"
+      onClick={[Function]}
+    >
+      <i
+        class="fas fa-sort-down"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being called correctly 2`] = `
+<div
+  className="ExpensesListItem"
+>
+  <div
+    className="ExpensesListItem__header"
+  >
+    <h3
+      className="ExpensesListItem__description"
+    >
+      Rent
+    </h3>
+    <button
+      className="ExpensesListItem__toggle-Btn"
+      onClick={[Function]}
+    >
+      <i
+        class="fas fa-sort-up"
+      />
+    </button>
+  </div>
+  <div
+    className="ExpensesListItem__body"
+  >
+    <div
+      className="ExpenseListItem__info"
+    >
+      <div
+        className="ExpenseListItem__createdAt"
+      >
+        0
+      </div>
+      <div
+        className="ExpenseListItem__amount"
+      >
+        <span>
+          R$: 
+        </span>
+        150000
+      </div>
+    </div>
+    <div
+      className="ExpenseListItem__note"
+    >
+      <span>
+        Note: 
+      </span>
+      Monthly payment
+    </div>
+    <div
+      className="ExpenseListItem__action-buttons"
+    >
+      <button
+        className="ExpenseListItem__delete-btn"
+      >
+        delete
+      </button>
+      <button
+        className="ExpenseListItem__edit-btn"
+      >
+        <Link
+          to="/edit/1"
+        >
+          edit
+        </Link>
+      </button>
+    </div>
+  </div>
+</div>
+`;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { DateRangePicker } from "react-dates";
 import "react-dates/initialize";
-import uuid from "uuid";
 import {
   setTextFilter,
   setSortBy,
@@ -10,7 +9,7 @@ import {
   setEndDateFilter
 } from "../../store/actions/filters.actions";
 
-export const ExpenseListFilters = ({
+export const Filters = ({
   filters,
   setTextFilter,
   setSortBy,
@@ -32,16 +31,21 @@ export const ExpenseListFilters = ({
 
   return (
     <div>
-      <input type="text" value={filters.text} onChange={onTextChange} />
-      <select value={filters.sortBy} onChange={onSortChange}>
+      <input
+        type="text"
+        name="text"
+        value={filters.text}
+        onChange={onTextChange}
+      />
+      <select value={filters.sortBy} name="sortBy" onChange={onSortChange}>
         <option value="date">Date</option>
         <option value="amount">Amount</option>
       </select>
       <DateRangePicker
         startDate={filters.startDate}
-        startDateId={uuid.v4()}
+        startDateId={"startId8739137"}
         endDate={filters.endDate}
-        endDateId={uuid.v4()}
+        endDateId={"endId739893"}
         onDatesChange={onDatesChange}
         focusedInput={focused}
         onFocusChange={setFocused}
@@ -67,4 +71,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(ExpenseListFilters);
+)(Filters);

@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[COMPONENT] EditExpensePage Tests for correct render 1`] = `
+<div
+  className="EditExpensePage"
+>
+  <ExpenseForm
+    amount={150000}
+    createdAt={0}
+    description="Rent"
+    id="1"
+    note="Monthly payment"
+    onSubmit={[Function]}
+  />
+</div>
+`;
