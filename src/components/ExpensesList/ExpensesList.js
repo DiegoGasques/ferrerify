@@ -2,7 +2,7 @@ import React from "react";
 import ExpenseListItem from "./ExpensesListItem/ExpensesListItem";
 import { connect } from "react-redux";
 import { sortByMatchSelector } from "../../store/selectors/expenses.selector";
-import "./ExpensesList.scss";
+import Filters from "../Filters/Filters";
 
 export const ExpensesList = ({ expenses }) => {
   const generate = () =>
@@ -13,6 +13,7 @@ export const ExpensesList = ({ expenses }) => {
       <div className="ExpensesList__header">
         <h2>Expenses</h2>
       </div>
+      <Filters />
       <div className="ExpensesList__content">
         {!!expenses ? generate() : <div>Loading...</div>}
       </div>

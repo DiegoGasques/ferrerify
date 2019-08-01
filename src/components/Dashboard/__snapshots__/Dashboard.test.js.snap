@@ -6,7 +6,6 @@ exports[`[COMPONENT] Dashboard Tests for changes in the rendered component 1`] =
 >
   <Container>
     <MainContent>
-      <Connect(Filters) />
       <Connect(ExpensesList) />
     </MainContent>
     <SecondaryContent>

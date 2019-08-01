@@ -11,6 +11,7 @@ exports[`[COMPONENT] ExpensesList Tests for changes in the rendered component wi
       Expenses
     </h2>
   </div>
+  <Connect(Filters) />
   <div
     className="ExpensesList__content"
   >
@@ -53,6 +54,7 @@ exports[`[COMPONENT] ExpensesList Tests for changes in the rendered component wi
       Expenses
     </h2>
   </div>
+  <Connect(Filters) />
   <div
     className="ExpensesList__content"
   />
