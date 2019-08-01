@@ -1,7 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
 import { expensesSelector } from "../../store/selectors/expenses.selector";
-import "./GeneralInfo.scss";
 
 export const GeneralInfo = ({ expenses }) => {
   return (
@@ -11,10 +10,10 @@ export const GeneralInfo = ({ expenses }) => {
       </div>
       <div className="GeneralInfo__body">
         <div className="GeneralInfo__all-expen-amount">
-          All Expenses: $<span>{289328}</span>
+          All Expenses: <span>${289328}</span>
         </div>
         <div className="GeneralInfo__curr-month-expen-amount">
-          Current Month: $<span>{289328}</span>
+          Current Month: <span>${289328}</span>
         </div>
       </div>
     </div>
