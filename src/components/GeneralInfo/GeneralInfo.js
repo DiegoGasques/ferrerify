@@ -1,8 +1,9 @@
 import React from "react";
 import { connect } from "react-redux";
-import { expensesSelector } from "../../store/selectors/expenses.selector";
+import numeral from "numeral";
+import { sumAll, sumAllMonth } from "../../store/selectors/expenses.selector";
 
-export const GeneralInfo = ({ expenses }) => {
+export const GeneralInfo = ({ sumAll, sumAllMonth }) => {
   return (
     <div className="GeneralInfo">
       <div className="GeneralInfo__header">
@@ -10,10 +11,11 @@ export const GeneralInfo = ({ expenses }) => {
       </div>
       <div className="GeneralInfo__body">
         <div className="GeneralInfo__all-expen-amount">
-          All Expenses: <span>${289328}</span>
+          All Expenses: <div>${numeral(sumAll / 100).format("0,0.00")}</div>
         </div>
         <div className="GeneralInfo__curr-month-expen-amount">
-          Current Month: <span>${289328}</span>
+          Current Month:{" "}
+          <div>${numeral(sumAllMonth / 100).format("0,0.00")}</div>
         </div>
       </div>
     </div>
@@ -21,7 +23,8 @@ export const GeneralInfo = ({ expenses }) => {
 };
 
 const mapStateToProps = state => ({
-  expenses: expensesSelector(state)
+  sumAll: sumAll(state),
+  sumAllMonth: sumAllMonth(state)
 });
 
 export default connect(mapStateToProps)(GeneralInfo);

@@ -35,7 +35,7 @@ export const ExpensesListItem = ({
             </div>
             <div className="ExpenseListItem__amount">
               <span>$</span>
-              {numeral(amount).format(0, 0.0)}
+              {numeral(amount / 100).format(0, 0.0)}
             </div>
           </div>
           <div className="ExpenseListItem__note">

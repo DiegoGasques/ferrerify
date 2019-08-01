@@ -27,8 +27,15 @@
   margin-bottom: 1.5rem;
 }
 
-.GeneralInfo__curr-month-expen-amount span,
-.GeneralInfo__all-expen-amount span {
+.GeneralInfo__curr-month-expen-amount,
+.GeneralInfo__all-expen-amount {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.GeneralInfo__curr-month-expen-amount div,
+.GeneralInfo__all-expen-amount div {
   color: lighten($black, 35%);
   font-weight: bold;
+  margin-left: $m-size;
 }

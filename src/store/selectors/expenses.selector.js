@@ -18,6 +18,24 @@ export const sumAll = createSelector(
   expenses => expenses.reduce((acc, exp) => (acc += exp.amount), 0)
 );
 
+export const sumAllMonth = createSelector(
+  expensesSelector,
+  expenses =>
+    expenses.reduce((acc, exp) => {
+      if (
+        moment()
+          .startOf("month")
+          .isSameOrBefore(moment(exp.createdAt)) &&
+        moment()
+          .endOf("month")
+          .isSameOrAfter(moment(exp.createdAt))
+      ) {
+        acc += exp.amount;
+      }
+      return acc;
+    }, 0)
+);
+
 export const textFilterExpensesSelector = createSelector(
   expensesSelector,
   textFilterSelector,
