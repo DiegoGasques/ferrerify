@@ -169,7 +169,7 @@ exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component wit
       </div>
     </div>
     <button>
-      Add Expense
+      Submit!
     </button>
   </form>
 </div>
@@ -344,7 +344,7 @@ exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component wit
       </div>
     </div>
     <button>
-      Add Expense
+      Submit!
     </button>
   </form>
 </div>
@@ -519,7 +519,7 @@ exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set 
       </div>
     </div>
     <button>
-      Add Expense
+      Submit!
     </button>
   </form>
 </div>
@@ -699,7 +699,7 @@ exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set 
       </div>
     </div>
     <button>
-      Add Expense
+      Submit!
     </button>
   </form>
 </div>

@@ -103,7 +103,7 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
           </div>
         </div>
 
-        <button>Add Expense</button>
+        <button>Submit!</button>
       </form>
     </div>
   );
