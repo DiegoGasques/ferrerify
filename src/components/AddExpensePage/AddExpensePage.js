@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import ExpenseForm from "../ExpenseForm/ExpenseForm";
 import { addExpense } from "../../store/actions/expenses.actions";
+import Container from "../Container/Container";
 
 export const AddExpensePage = ({ addExpense, history }) => {
   const onSubmit = expense => {
@@ -11,8 +12,12 @@ export const AddExpensePage = ({ addExpense, history }) => {
 
   return (
     <div className="AddExpensePage">
-      <h1>Add Expense</h1>
-      <ExpenseForm onSubmit={onSubmit} />
+      <Container column={true}>
+        <div className="AddExpensePage__header">
+          <h2>Add Expense</h2>
+        </div>
+        <ExpenseForm onSubmit={onSubmit} />
+      </Container>
     </div>
   );
 };
