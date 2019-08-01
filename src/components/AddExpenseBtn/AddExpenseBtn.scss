@@ -1,13 +1,21 @@
 .AddExpenseBtn {
   width: 100%;
-  padding: 1.5rem;
+  padding: $m-size;
   text-transform: uppercase;
   background: blueviolet;
-  color: aliceblue;
-  font-size: 1.5rem;
+  color: $snow;
+  font-size: $h4;
   border: none;
   font-weight: bold;
   letter-spacing: 0.2rem;
+}
+
+.AddExpenseBtn:hover {
+  box-shadow: $btn-shadow-hover;
+}
+
+.AddExpenseBtn:active {
+  box-shadow: $btn-shadow-active;
 }
 
 .AddExpenseBtn:active,
