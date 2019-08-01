@@ -7,7 +7,8 @@ import {
   endDateFilterSelector,
   textFilterExpensesSelector,
   betweenDatesFilterExpensesSelector,
-  sortByMatchSelector
+  sortByMatchSelector,
+  sumAll
 } from "../expenses.selector";
 
 describe("[SELECTORS] Expenses", () => {
@@ -266,5 +267,10 @@ describe("[SELECTORS] Expenses", () => {
       }
     });
     expect(expenses).toEqual(sortedByDate);
+  });
+
+  it("Should sum all expenses amount", () => {
+    const sum = sumAll(state);
+    expect(sum).toBe(22000 + 1000 + 150000);
   });
 });

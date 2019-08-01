@@ -13,6 +13,11 @@ export const getExpenseById = createSelector(
   expense => expense
 );
 
+export const sumAll = createSelector(
+  expensesSelector,
+  expenses => expenses.reduce((acc, exp) => (acc += exp.amount), 0)
+);
+
 export const textFilterExpensesSelector = createSelector(
   expensesSelector,
   textFilterSelector,
