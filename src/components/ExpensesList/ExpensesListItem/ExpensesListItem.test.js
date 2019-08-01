@@ -10,7 +10,7 @@ describe("[COMPONENT] ExpensesListItem", () => {
     expect(wrapper.find(".fa-sort-down")).toBeDefined();
     expect(toJson(wrapper)).toMatchSnapshot();
 
-    wrapper.find(".ExpensesListItem__toggle-Btn").simulate("click");
+    wrapper.find(".ExpensesListItem__header button").simulate("click");
     expect(wrapper.find(".fa-sort-up")).toBeDefined();
     expect(toJson(wrapper)).toMatchSnapshot();
   });
@@ -21,7 +21,7 @@ describe("[COMPONENT] ExpensesListItem", () => {
       <ExpensesListItem removeExpense={removeExpenseSpy} {...expensesArr[0]} />
     );
 
-    wrapper.find(".ExpensesListItem__toggle-Btn").simulate("click");
+    wrapper.find(".ExpensesListItem__header button").simulate("click");
     wrapper.find(".ExpenseListItem__delete-btn").simulate("click");
     expect(removeExpenseSpy).toHaveBeenCalled();
   });

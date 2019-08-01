@@ -7,13 +7,10 @@ exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being calle
   <div
     className="ExpensesListItem__header"
   >
-    <h3
-      className="ExpensesListItem__description"
-    >
+    <h3>
       Rent
     </h3>
     <button
-      className="ExpensesListItem__toggle-Btn"
       onClick={[Function]}
     >
       <i
@@ -31,13 +28,10 @@ exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being calle
   <div
     className="ExpensesListItem__header"
   >
-    <h3
-      className="ExpensesListItem__description"
-    >
+    <h3>
       Rent
     </h3>
     <button
-      className="ExpensesListItem__toggle-Btn"
       onClick={[Function]}
     >
       <i
@@ -46,7 +40,7 @@ exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being calle
     </button>
   </div>
   <div
-    className="ExpensesListItem__body"
+    className="ExpensesListItem__body active"
   >
     <div
       className="ExpenseListItem__info"
@@ -54,15 +48,15 @@ exports[`[COMPONENT] ExpensesListItem Tests for handle toggle button being calle
       <div
         className="ExpenseListItem__createdAt"
       >
-        0
+        12/31/1969
       </div>
       <div
         className="ExpenseListItem__amount"
       >
         <span>
-          R$: 
+          $
         </span>
-        150000
+        150,000
       </div>
     </div>
     <div

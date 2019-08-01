@@ -1,62 +1,89 @@
 .ExpensesListItem {
-  margin-bottom: 1.5rem;
-  -webkit-box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.5);
-  color: #919090;
+  margin-bottom: $s-size;
+  -webkit-box-shadow: $main-shadow;
+  box-shadow: $main-shadow;
+  color: darken($light-grey, 100%);
 }
 
 .ExpensesListItem__header {
-  padding: .7rem 1.5rem;
+  padding: $xs-size $m-size;
   display: flex;
   justify-content: space-between;
-}
+  background: lighten($light-grey, 14%);
+  border: 1px solid $light-grey;
 
-.ExpensesListItem__toggle-Btn {
-  background: none;
-  border: none;
-  padding: .2rem .5rem;
-  margin: 0;
-  text-align: center;
-  font-size: 1.8rem;
-}
+  h3 {
+    font-size: $h4;
+    color: lighten($black, 30%);
+  }
 
-.ExpensesListItem__toggle-Btn:active,
-.ExpensesListItem__toggle-Btn:focus
- {
-  outline: none;
-}
+  button {
+    background: none;
+    border: none;
+    padding: 0.2rem $xs-size;
+    margin: 0;
+    text-align: center;
+    font-size: $h4;
+    color: lighten($black, 30%);
+  }
 
-.fa-sort-up {
-  transform: translate(0, 4px);
-}
+  button:active,
+  button:focus {
+    outline: none;
+  }
 
-.fa-sort-down {
-  transform: translate(0, -4px);
+  .fa-sort-up {
+    transform: translate(0, 4px);
+  }
+
+  .fa-sort-down {
+    transform: translate(0, -4px);
+  }
 }
 
 .ExpensesListItem__body {
-  padding: .7rem 1.5rem;
+  padding: $m-size;
+  color: darken($secondary, 20%);
 }
 
 .ExpenseListItem__info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: $m-size;
+}
+
+.ExpenseListItem__createdAt {
+  color: darken($light-grey, 20%);
 }
 
 .ExpenseListItem__note {
-  margin-bottom: 1.5rem;
+  margin-bottom: $m-size;
+}
+
+.ExpenseListItem__amount {
+  font-size: $h3;
 }
 
 .ExpenseListItem__amount span,
 .ExpenseListItem__note span {
   font-weight: 600;
-  color: black;
+  color: lighten($black, 10%);
 }
 
 .ExpenseListItem__action-buttons {
   display: flex;
   justify-content: flex-end;
+}
+
+.ExpenseListItem__action-buttons {
+  button:hover {
+    box-shadow: $btn-shadow-hover;
+  }
+
+  button:active {
+    box-shadow: $btn-shadow-active;
+    outline: none;
+  }
 }
 
 .ExpenseListItem__delete-btn,
@@ -65,7 +92,7 @@
   background: none;
   color: white;
   margin-left: 1.5rem;
-  padding: .7rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -79,7 +106,7 @@
   background: green;
 }
 
-.ExpenseListItem__edit-btn a{
+.ExpenseListItem__edit-btn a {
   text-decoration: none;
   color: inherit;
 }
