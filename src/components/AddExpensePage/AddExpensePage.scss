@@ -1,10 +1,7 @@
-.AddExpensePage {
-}
-
 .AddExpensePage__header {
   background: darken($secondary, 20%);
-  padding: $xs-size $m-size;
-  margin: $m-size 0;
+  padding: $m-size $m-size;
+  margin: $l-size 0;
   -webkit-box-shadow: $main-shadow;
   box-shadow: $main-shadow;
 

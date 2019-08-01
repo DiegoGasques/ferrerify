@@ -1,120 +1,173 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component with default props 1`] = `
-<div>
+<div
+  className="ExpenseForm"
+>
   <form
     onSubmit={[Function]}
   >
-    <input
-      autoFocus={true}
-      name="description"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      name="amount"
-      onChange={[Function]}
-      placeholder="Ex: 10, 10.00"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      appendToBody={false}
-      block={false}
-      calendarInfoPosition="bottom"
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disableScroll={false}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      horizontalMonthPadding={13}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepFocusOnInput={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsSelected": [Function],
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup first"
+      >
+        <label
+          htmlFor="text"
+        >
+          Description: 
+        </label>
+        <input
+          autoFocus={true}
+          id="text"
+          name="description"
+          onChange={[Function]}
+          placeholder="Ex: Rent, Car wash"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="formGroup second"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Amount: 
+        </label>
+        <input
+          id="amount"
+          name="amount"
+          onChange={[Function]}
+          placeholder="Ex: 10, 10.00"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup third"
+      >
+        <label
+          htmlFor="note"
+        >
+          Note: 
+        </label>
+        <textarea
+          id="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add a note for your expense (optional)"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup forth"
+      >
+        <label
+          htmlFor="picker"
+        >
+          Date: 
+        </label>
+        <withStyles(SingleDatePicker)
+          anchorDirection="left"
+          appendToBody={false}
+          block={false}
+          calendarInfoPosition="bottom"
+          customCloseIcon={null}
+          customInputIcon={null}
+          date={"1970-01-01T00:00:00.000Z"}
+          daySize={39}
+          disableScroll={false}
+          disabled={false}
+          displayFormat={[Function]}
+          enableOutsideDays={false}
+          firstDayOfWeek={null}
+          focused={false}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          horizontalMonthPadding={13}
+          id="date"
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          monthFormat="MMMM YYYY"
+          navNext={null}
+          navPrev={null}
+          noBorder={false}
+          numberOfMonths={1}
+          onClose={[Function]}
+          onDateChange={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+            Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableDate": [Function],
+              "clearDate": "Clear Date",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
-        }
-      }
-      placeholder="Date"
-      readOnly={false}
-      regular={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonthElement={null}
-      renderMonthText={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      name="note"
-      onChange={[Function]}
-      placeholder="Add a note for your expense (optional)"
-      value=""
-    />
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            }
+          }
+          placeholder="Date"
+          readOnly={false}
+          regular={false}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonthElement={null}
+          renderMonthText={null}
+          reopenPickerOnClearDate={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDate={false}
+          showDefaultInputIcon={false}
+          small={false}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+        />
+      </div>
+    </div>
     <button>
       Add Expense
     </button>
@@ -123,120 +176,173 @@ exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component wit
 `;
 
 exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component with expense passed in 1`] = `
-<div>
+<div
+  className="ExpenseForm"
+>
   <form
     onSubmit={[Function]}
   >
-    <input
-      autoFocus={true}
-      name="description"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value="Rent"
-    />
-    <input
-      name="amount"
-      onChange={[Function]}
-      placeholder="Ex: 10, 10.00"
-      type="text"
-      value="1500"
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      appendToBody={false}
-      block={false}
-      calendarInfoPosition="bottom"
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disableScroll={false}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      horizontalMonthPadding={13}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepFocusOnInput={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsSelected": [Function],
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup first"
+      >
+        <label
+          htmlFor="text"
+        >
+          Description: 
+        </label>
+        <input
+          autoFocus={true}
+          id="text"
+          name="description"
+          onChange={[Function]}
+          placeholder="Ex: Rent, Car wash"
+          type="text"
+          value="Rent"
+        />
+      </div>
+      <div
+        className="formGroup second"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Amount: 
+        </label>
+        <input
+          id="amount"
+          name="amount"
+          onChange={[Function]}
+          placeholder="Ex: 10, 10.00"
+          type="text"
+          value="1500"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup third"
+      >
+        <label
+          htmlFor="note"
+        >
+          Note: 
+        </label>
+        <textarea
+          id="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add a note for your expense (optional)"
+          value="Monthly payment"
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup forth"
+      >
+        <label
+          htmlFor="picker"
+        >
+          Date: 
+        </label>
+        <withStyles(SingleDatePicker)
+          anchorDirection="left"
+          appendToBody={false}
+          block={false}
+          calendarInfoPosition="bottom"
+          customCloseIcon={null}
+          customInputIcon={null}
+          date={"1970-01-01T00:00:00.000Z"}
+          daySize={39}
+          disableScroll={false}
+          disabled={false}
+          displayFormat={[Function]}
+          enableOutsideDays={false}
+          firstDayOfWeek={null}
+          focused={false}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          horizontalMonthPadding={13}
+          id="date"
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          monthFormat="MMMM YYYY"
+          navNext={null}
+          navPrev={null}
+          noBorder={false}
+          numberOfMonths={1}
+          onClose={[Function]}
+          onDateChange={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+            Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableDate": [Function],
+              "clearDate": "Clear Date",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
-        }
-      }
-      placeholder="Date"
-      readOnly={false}
-      regular={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonthElement={null}
-      renderMonthText={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      name="note"
-      onChange={[Function]}
-      placeholder="Add a note for your expense (optional)"
-      value="Monthly payment"
-    />
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            }
+          }
+          placeholder="Date"
+          readOnly={false}
+          regular={false}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonthElement={null}
+          renderMonthText={null}
+          reopenPickerOnClearDate={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDate={false}
+          showDefaultInputIcon={false}
+          small={false}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+        />
+      </div>
+    </div>
     <button>
       Add Expense
     </button>
@@ -245,120 +351,173 @@ exports[`[COMPONENT] ExpenseForm Tests for changes in the rendered component wit
 `;
 
 exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set error to state 1`] = `
-<div>
+<div
+  className="ExpenseForm"
+>
   <form
     onSubmit={[Function]}
   >
-    <input
-      autoFocus={true}
-      name="description"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      name="amount"
-      onChange={[Function]}
-      placeholder="Ex: 10, 10.00"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      appendToBody={false}
-      block={false}
-      calendarInfoPosition="bottom"
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disableScroll={false}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      horizontalMonthPadding={13}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepFocusOnInput={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsSelected": [Function],
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup first"
+      >
+        <label
+          htmlFor="text"
+        >
+          Description: 
+        </label>
+        <input
+          autoFocus={true}
+          id="text"
+          name="description"
+          onChange={[Function]}
+          placeholder="Ex: Rent, Car wash"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="formGroup second"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Amount: 
+        </label>
+        <input
+          id="amount"
+          name="amount"
+          onChange={[Function]}
+          placeholder="Ex: 10, 10.00"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup third"
+      >
+        <label
+          htmlFor="note"
+        >
+          Note: 
+        </label>
+        <textarea
+          id="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add a note for your expense (optional)"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup forth"
+      >
+        <label
+          htmlFor="picker"
+        >
+          Date: 
+        </label>
+        <withStyles(SingleDatePicker)
+          anchorDirection="left"
+          appendToBody={false}
+          block={false}
+          calendarInfoPosition="bottom"
+          customCloseIcon={null}
+          customInputIcon={null}
+          date={"1970-01-01T00:00:00.000Z"}
+          daySize={39}
+          disableScroll={false}
+          disabled={false}
+          displayFormat={[Function]}
+          enableOutsideDays={false}
+          firstDayOfWeek={null}
+          focused={false}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          horizontalMonthPadding={13}
+          id="date"
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          monthFormat="MMMM YYYY"
+          navNext={null}
+          navPrev={null}
+          noBorder={false}
+          numberOfMonths={1}
+          onClose={[Function]}
+          onDateChange={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+            Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableDate": [Function],
+              "clearDate": "Clear Date",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
-        }
-      }
-      placeholder="Date"
-      readOnly={false}
-      regular={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonthElement={null}
-      renderMonthText={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      name="note"
-      onChange={[Function]}
-      placeholder="Add a note for your expense (optional)"
-      value=""
-    />
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            }
+          }
+          placeholder="Date"
+          readOnly={false}
+          regular={false}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonthElement={null}
+          renderMonthText={null}
+          reopenPickerOnClearDate={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDate={false}
+          showDefaultInputIcon={false}
+          small={false}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+        />
+      </div>
+    </div>
     <button>
       Add Expense
     </button>
@@ -367,123 +526,178 @@ exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set 
 `;
 
 exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set error to state 2`] = `
-<div>
-  <p>
+<div
+  className="ExpenseForm"
+>
+  <p
+    className="error"
+  >
     Please provide description and amount.
   </p>
   <form
     onSubmit={[Function]}
   >
-    <input
-      autoFocus={true}
-      name="description"
-      onChange={[Function]}
-      placeholder="Description"
-      type="text"
-      value=""
-    />
-    <input
-      name="amount"
-      onChange={[Function]}
-      placeholder="Ex: 10, 10.00"
-      type="text"
-      value=""
-    />
-    <withStyles(SingleDatePicker)
-      anchorDirection="left"
-      appendToBody={false}
-      block={false}
-      calendarInfoPosition="bottom"
-      customCloseIcon={null}
-      customInputIcon={null}
-      date={"1970-01-01T00:00:00.000Z"}
-      daySize={39}
-      disableScroll={false}
-      disabled={false}
-      displayFormat={[Function]}
-      enableOutsideDays={false}
-      firstDayOfWeek={null}
-      focused={false}
-      hideKeyboardShortcutsPanel={false}
-      horizontalMargin={0}
-      horizontalMonthPadding={13}
-      id="date"
-      initialVisibleMonth={null}
-      inputIconPosition="before"
-      isDayBlocked={[Function]}
-      isDayHighlighted={[Function]}
-      isOutsideRange={[Function]}
-      isRTL={false}
-      keepFocusOnInput={false}
-      keepOpenOnDateSelect={false}
-      monthFormat="MMMM YYYY"
-      navNext={null}
-      navPrev={null}
-      noBorder={false}
-      numberOfMonths={1}
-      onClose={[Function]}
-      onDateChange={[Function]}
-      onFocusChange={[Function]}
-      onNextMonthClick={[Function]}
-      onPrevMonthClick={[Function]}
-      openDirection="down"
-      orientation="horizontal"
-      phrases={
-        Object {
-          "calendarLabel": "Calendar",
-          "chooseAvailableDate": [Function],
-          "clearDate": "Clear Date",
-          "closeDatePicker": "Close",
-          "dateIsSelected": [Function],
-          "dateIsUnavailable": [Function],
-          "enterKey": "Enter key",
-          "escape": "Escape key",
-          "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-          "homeEnd": "Home and end keys",
-          "jumpToNextMonth": "Move forward to switch to the next month.",
-          "jumpToPrevMonth": "Move backward to switch to the previous month.",
-          "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup first"
+      >
+        <label
+          htmlFor="text"
+        >
+          Description: 
+        </label>
+        <input
+          autoFocus={true}
+          id="text"
+          name="description"
+          onChange={[Function]}
+          placeholder="Ex: Rent, Car wash"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="formGroup second"
+      >
+        <label
+          htmlFor="amount"
+        >
+          Amount: 
+        </label>
+        <input
+          id="amount"
+          name="amount"
+          onChange={[Function]}
+          placeholder="Ex: 10, 10.00"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup third"
+      >
+        <label
+          htmlFor="note"
+        >
+          Note: 
+        </label>
+        <textarea
+          id="note"
+          name="note"
+          onChange={[Function]}
+          placeholder="Add a note for your expense (optional)"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="row"
+    >
+      <div
+        className="formGroup forth"
+      >
+        <label
+          htmlFor="picker"
+        >
+          Date: 
+        </label>
+        <withStyles(SingleDatePicker)
+          anchorDirection="left"
+          appendToBody={false}
+          block={false}
+          calendarInfoPosition="bottom"
+          customCloseIcon={null}
+          customInputIcon={null}
+          date={"1970-01-01T00:00:00.000Z"}
+          daySize={39}
+          disableScroll={false}
+          disabled={false}
+          displayFormat={[Function]}
+          enableOutsideDays={false}
+          firstDayOfWeek={null}
+          focused={false}
+          hideKeyboardShortcutsPanel={false}
+          horizontalMargin={0}
+          horizontalMonthPadding={13}
+          id="date"
+          initialVisibleMonth={null}
+          inputIconPosition="before"
+          isDayBlocked={[Function]}
+          isDayHighlighted={[Function]}
+          isOutsideRange={[Function]}
+          isRTL={false}
+          keepFocusOnInput={false}
+          keepOpenOnDateSelect={false}
+          monthFormat="MMMM YYYY"
+          navNext={null}
+          navPrev={null}
+          noBorder={false}
+          numberOfMonths={1}
+          onClose={[Function]}
+          onDateChange={[Function]}
+          onFocusChange={[Function]}
+          onNextMonthClick={[Function]}
+          onPrevMonthClick={[Function]}
+          openDirection="down"
+          orientation="horizontal"
+          phrases={
+            Object {
+              "calendarLabel": "Calendar",
+              "chooseAvailableDate": [Function],
+              "clearDate": "Clear Date",
+              "closeDatePicker": "Close",
+              "dateIsSelected": [Function],
+              "dateIsUnavailable": [Function],
+              "enterKey": "Enter key",
+              "escape": "Escape key",
+              "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
+              "homeEnd": "Home and end keys",
+              "jumpToNextMonth": "Move forward to switch to the next month.",
+              "jumpToPrevMonth": "Move backward to switch to the previous month.",
+              "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-          "keyboardShortcuts": "Keyboard Shortcuts",
-          "leftArrowRightArrow": "Right and left arrow keys",
-          "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-          "moveFocusByOneMonth": "Switch months.",
-          "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-          "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-          "openThisPanel": "Open this panel.",
-          "pageUpPageDown": "page up and page down keys",
-          "questionMark": "Question mark",
-          "returnFocusToInput": "Return to the date input field.",
-          "selectFocusedDate": "Select the date in focus.",
-          "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-          "upArrowDownArrow": "up and down arrow keys",
-        }
-      }
-      placeholder="Date"
-      readOnly={false}
-      regular={false}
-      renderCalendarInfo={null}
-      renderDayContents={null}
-      renderMonthElement={null}
-      renderMonthText={null}
-      reopenPickerOnClearDate={false}
-      required={false}
-      screenReaderInputMessage=""
-      showClearDate={false}
-      showDefaultInputIcon={false}
-      small={false}
-      verticalHeight={null}
-      verticalSpacing={22}
-      weekDayFormat="dd"
-      withFullScreenPortal={false}
-      withPortal={false}
-    />
-    <textarea
-      name="note"
-      onChange={[Function]}
-      placeholder="Add a note for your expense (optional)"
-      value=""
-    />
+              "keyboardShortcuts": "Keyboard Shortcuts",
+              "leftArrowRightArrow": "Right and left arrow keys",
+              "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
+              "moveFocusByOneMonth": "Switch months.",
+              "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
+              "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
+              "openThisPanel": "Open this panel.",
+              "pageUpPageDown": "page up and page down keys",
+              "questionMark": "Question mark",
+              "returnFocusToInput": "Return to the date input field.",
+              "selectFocusedDate": "Select the date in focus.",
+              "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
+              "upArrowDownArrow": "up and down arrow keys",
+            }
+          }
+          placeholder="Date"
+          readOnly={false}
+          regular={false}
+          renderCalendarInfo={null}
+          renderDayContents={null}
+          renderMonthElement={null}
+          renderMonthText={null}
+          reopenPickerOnClearDate={false}
+          required={false}
+          screenReaderInputMessage=""
+          showClearDate={false}
+          showDefaultInputIcon={false}
+          small={false}
+          verticalHeight={null}
+          verticalSpacing={22}
+          weekDayFormat="dd"
+          withFullScreenPortal={false}
+          withPortal={false}
+        />
+      </div>
+    </div>
     <button>
       Add Expense
     </button>
@@ -493,6 +707,7 @@ exports[`[COMPONENT] ExpenseForm Tests for form submition event that should set 
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the amount 1`] = `
 <input
+  id="amount"
   name="amount"
   onChange={[Function]}
   placeholder="Ex: 10, 10.00"
@@ -503,6 +718,7 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the amount
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the amount 2`] = `
 <input
+  id="amount"
   name="amount"
   onChange={[Function]}
   placeholder="Ex: 10, 10.00"
@@ -514,9 +730,10 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the amount
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the description 1`] = `
 <input
   autoFocus={true}
+  id="text"
   name="description"
   onChange={[Function]}
-  placeholder="Description"
+  placeholder="Ex: Rent, Car wash"
   type="text"
   value=""
 />
@@ -525,9 +742,10 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the descri
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the description 2`] = `
 <input
   autoFocus={true}
+  id="text"
   name="description"
   onChange={[Function]}
-  placeholder="Description"
+  placeholder="Ex: Rent, Car wash"
   type="text"
   value="new description"
 />
@@ -535,6 +753,7 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the descri
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the note 1`] = `
 <textarea
+  id="note"
   name="note"
   onChange={[Function]}
   placeholder="Add a note for your expense (optional)"
@@ -544,6 +763,7 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the note 1
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the note 2`] = `
 <textarea
+  id="note"
   name="note"
   onChange={[Function]}
   placeholder="Add a note for your expense (optional)"
@@ -553,6 +773,7 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call changing the note 2
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call when amount value passed is invalid 1`] = `
 <input
+  id="amount"
   name="amount"
   onChange={[Function]}
   placeholder="Ex: 10, 10.00"
@@ -563,6 +784,7 @@ exports[`[COMPONENT] ExpenseForm Tests for handleChange call when amount value p
 
 exports[`[COMPONENT] ExpenseForm Tests for handleChange call when amount value passed is invalid 2`] = `
 <input
+  id="amount"
   name="amount"
   onChange={[Function]}
   placeholder="Ex: 10, 10.00"

@@ -2,6 +2,6 @@
 
 exports[`[COMPONENT] Container Tests for changes in the rendered component 1`] = `
 <div
-  className="Container"
+  className="Container undefined"
 />
 `;

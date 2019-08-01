@@ -24,6 +24,8 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
     }
   };
 
+  const handleFocus = ({ focused }) => setFocused(focused);
+
   const handleDateChange = createdAt => {
     if (createdAt) {
       setCreatedAt(createdAt);
@@ -47,38 +49,60 @@ const ExpenseForm = ({ description, amount, note, createdAt, onSubmit }) => {
   };
 
   return (
-    <div>
-      {_error && <p>{_error}</p>}
+    <div className="ExpenseForm">
+      {_error && <p className="error">{_error}</p>}
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="description"
-          placeholder="Description"
-          autoFocus
-          value={_description}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="amount"
-          placeholder="Ex: 10, 10.00"
-          value={_amount}
-          onChange={handleChange}
-        />
-        <SingleDatePicker
-          date={_createdAt}
-          onDateChange={handleDateChange}
-          focused={_focused}
-          onFocusChange={setFocused}
-          numberOfMonths={1}
-          isOutsideRange={() => false}
-        />
-        <textarea
-          name="note"
-          placeholder="Add a note for your expense (optional)"
-          value={_note}
-          onChange={handleChange}
-        />
+        <div className="row">
+          <div className="formGroup first">
+            <label htmlFor="text">Description: </label>
+            <input
+              type="text"
+              name="description"
+              id="text"
+              placeholder="Ex: Rent, Car wash"
+              autoFocus
+              value={_description}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="formGroup second">
+            <label htmlFor="amount">Amount: </label>
+            <input
+              type="text"
+              name="amount"
+              id="amount"
+              placeholder="Ex: 10, 10.00"
+              value={_amount}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="formGroup third">
+            <label htmlFor="note">Note: </label>
+            <textarea
+              name="note"
+              id="note"
+              placeholder="Add a note for your expense (optional)"
+              value={_note}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
+        <div className="row">
+          <div className="formGroup forth">
+            <label htmlFor="picker">Date: </label>
+            <SingleDatePicker
+              date={_createdAt}
+              onDateChange={handleDateChange}
+              focused={_focused}
+              onFocusChange={handleFocus}
+              numberOfMonths={1}
+              isOutsideRange={() => false}
+            />
+          </div>
+        </div>
+
         <button>Add Expense</button>
       </form>
     </div>

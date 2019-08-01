@@ -4,13 +4,24 @@ exports[`[COMPONENT] EditExpensePage Tests for correct render 1`] = `
 <div
   className="EditExpensePage"
 >
-  <ExpenseForm
-    amount={150000}
-    createdAt={0}
-    description="Rent"
-    id="1"
-    note="Monthly payment"
-    onSubmit={[Function]}
-  />
+  <Container
+    column={true}
+  >
+    <div
+      className="EditExpensePage__header"
+    >
+      <h2>
+        Edit Expense
+      </h2>
+    </div>
+    <ExpenseForm
+      amount={150000}
+      createdAt={0}
+      description="Rent"
+      id="1"
+      note="Monthly payment"
+      onSubmit={[Function]}
+    />
+  </Container>
 </div>
 `;
